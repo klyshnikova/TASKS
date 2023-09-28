@@ -6,3 +6,7 @@
  *
  * 3. Выведите в консоль длину результирующего массива
  */
+const myArray=[1,2,3,4]
+
+let first = myArray.push(1,2,3)
+console.log(myArray.length)

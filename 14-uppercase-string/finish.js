@@ -12,3 +12,8 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+const mySting = 'Kseniia'
+const myTwoString = mySting.toUpperCase()
+console.log(mySting instanceof String)
+console.log(typeof mySting)
+console.log(myTwoString)

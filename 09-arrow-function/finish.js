@@ -10,3 +10,10 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+const myVaribale = ()=>{
+    return `Привет, мир`
+}
+console.log(myVaribale())
+
+const myVaribaleTwo = ()=>`Привет, мир`
+console.log(myVaribaleTwo())

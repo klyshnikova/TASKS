@@ -10,3 +10,9 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+const myVaribale = function (name){
+    return `Привет, ${name}`
+}
+
+console.log(myVaribale('Kseniia'))
+console.log( myVaribale('Bogdan'))
