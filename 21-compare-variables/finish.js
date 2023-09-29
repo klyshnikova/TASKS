@@ -9,9 +9,15 @@
 let myVariable1 = 10
 let myVariable2 = '5'
 
-// Напишите код здесь
+
+Number(myVariable2)
+Number(myVariable1)
 
 myVariable1 = '20'
 myVariable2 = 100
 
-// Напишите код здесь
+Number(myVariable2)
+Number(myVariable1)
+
+if(myVariable1 <= myVariable2)
+console.log(true)

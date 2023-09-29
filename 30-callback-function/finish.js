@@ -6,8 +6,15 @@
  * 2. Нужно ли как-то исправить этот код?
  */
 
-setTimeout(function myFn() {
-  console.log('Привет из функции myFn')
-}, 2000)
+// setTimeout(function myFn() {
+//   console.log('Привет из функции myFn')
+// }, 2000)
 
+// myFn()
+
+//ошибка, так как функция находится не шлобальной зоне видимости
+
+function myFn() { setTimeout(()=> 
+  console.log('Привет из функции myFn'), 2000)
+}
 myFn()

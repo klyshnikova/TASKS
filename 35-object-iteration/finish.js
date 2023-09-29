@@ -13,3 +13,4 @@ const myObject = {
   key4: null,
   key10: NaN,
 }
+const c = Object.keys(myObject)

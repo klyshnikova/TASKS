@@ -12,8 +12,12 @@
 
 const nums = [10, -12, 30, -1, -8, 0, 14, -33, 20]
 
-// Создайте функцию "sumPositiveNegative" здесь
-
+function sumPositiveNegative(myArray){
+    const myNegativ = myArray.forEach(element => {
+        let result = element
+        console.log(result)        
+    });
+}
 const result = sumPositiveNegative(nums)
 
 console.log(result)

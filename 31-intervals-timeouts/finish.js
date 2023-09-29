@@ -12,3 +12,9 @@
  * "Сообщение номер 4"
  * "Сообщение номер 5"
  */
+
+let timerId = setInterval(() => {
+    for(i = 1;i<= 5;i++)console.log(`Сообщение номер ${i}`)}
+    , 2000);
+
+setTimeout(() => { clearInterval(timerId);  }, 2000);
