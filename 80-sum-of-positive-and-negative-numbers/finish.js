@@ -11,14 +11,20 @@
  */
 
 const nums = [10, -12, 30, -1, -8, 0, 14, -33, 20]
-
 function sumPositiveNegative(myArray){
-    const myNegativ = myArray.forEach(element => {
-        let result = element
-        console.log(result)        
-    });
+    len = myArray.length
+    i = 0;
+    negative = 0
+    positive = 0
+    while(i< len){
+        if (myArray[i] >= 0){
+            positive = myArray[i] + positive
+        i++}
+        else if (myArray[i] < 0){
+            negative = myArray[i] + negative
+        i++}
+    }
+    return{positive,negative}
 }
-const result = sumPositiveNegative(nums)
-
-console.log(result)
+console.log(sumPositiveNegative(nums))
 // { positive: 74, negative: -54 }
