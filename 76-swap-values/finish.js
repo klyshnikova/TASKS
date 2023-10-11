@@ -9,7 +9,7 @@ let b = 'second'
 
 console.log(a, b)
 // first second
-
+;[a,b]=[b,a]
 // Напишите код здесь
 
 console.log(a, b)

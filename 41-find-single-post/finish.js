@@ -18,6 +18,17 @@ const posts = [
   { postId: 6134, commentsQuantity: 2 },
 ]
 
+function findPostById(id,arr){
+  i = 0
+  while (i < arr.length){
+    if(arr[i].postId!= id)
+      i++;
+    else{
+      console.log(arr[i].postId)
+      return arr[i].postId}
+  }
+}
 console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
 
 console.log(findPostById(4511, posts)) // undefined
+
