@@ -36,8 +36,31 @@ const inputProducts = [
   },
 ]
 
-// const sortedProducts = sortProductsByPrice(inputProducts)
+function sortProductsByPrice(products){
+    const newArray = [...products]
+    const newSecondArray = newArray.reduce((element)=>{
+      len = newArray.length
+      while(i<len){
+        i= 0
+        j = 1
+        if(newArray[i].price < newArray[j].price){
+            obj = newArray[j]
+            newArray[j] = newArray[i]
+            newArray[i] = obj
+            i++
+            j++
+          }
+          else
+          {i++
+        j++}
+        }
 
-// console.log(sortedProducts) // Массив отсортированных товаров
+    })
+    return newSecondArray
+}
 
-// console.log(inputProducts) // Оригинальный массив не должен измениться
+ const sortedProducts = sortProductsByPrice(inputProducts)
+
+ console.log(sortedProducts) // Массив отсортированных товаров
+
+ console.log(inputProducts) // Оригинальный массив не должен измениться
