@@ -24,6 +24,18 @@ const inputPosts = [
   },
 ]
 
+function popularPostsIds(posts,minimalComentsQty){
+  let myArray = []
+  i = 0
+  while(i < posts.length){
+    if(posts[i].comments > minimalComentsQty){
+      myArray.push(posts[i].postId)
+    i++}
+    else i++
+  }
+  
+  return myArray
+}
 console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
 
 console.log(popularPostsIds(inputPosts, 15)) // [3421]
