@@ -19,3 +19,17 @@
  * в классе "CustomArray" также будет "push" вместо "customPush"?
  * Попробуйте это.
  */
+
+class CustomArray extends Array {
+    customPush(newElement){
+        this[this.length]  = newElement
+        this.length = this.length +1
+        console.log(`Новый элемент ${newElement} был только что добавлен в массив`)
+    }
+}
+
+const newCust = new CustomArray(1,34,32,5,6)
+
+console.log(newCust.customPush(555))
+newCust.push(333)
+console.log(newCust)
