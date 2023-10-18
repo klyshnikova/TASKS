@@ -17,7 +17,7 @@ let person = {
   cartId: 435,
 }
 
-console.log(person)
+console.log({index,email,name,cartId}=person)
 /*
 {
   index: 4,

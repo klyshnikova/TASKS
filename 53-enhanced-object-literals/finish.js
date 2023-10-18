@@ -1,3 +1,4 @@
+
 /** ЗАДАЧА 53 - Сокращенное написание свойств объектов
  * 
  * 1. Исправьте все ошибки в коде.
@@ -13,22 +14,22 @@
  */
 
 const photosGallery = (title, dimensions, date) => {
-  return {
-    title: title,
-    info: function() {
-      console.log(
-        "Фото "${title}" имеет разрешение ${date}`
-      );
-    },
-    dimensions: dimensions
-    publishInfo: () => {
-      console.log(
-        `Фото было опубликовано ${Math.floor(
-          (new Date().getTime() - date.getTime()) / 1000
-        )} секунды назад`
-      );
-    ,
-    date: date
+    return {
+      title,
+      info(){
+        console.log(
+          `Фото "${title}" имеет разрешение ${dimensions}`
+        );
+      },
+      [dimensions]: true,
+      publishInfo() {
+        console.log(
+          `Фото было опубликовано ${Math.floor(
+            (new Date().getTime() - date.getTime()) / 1000
+          )} секунды назад`
+        );
+      },
+    date
   }
 }
 

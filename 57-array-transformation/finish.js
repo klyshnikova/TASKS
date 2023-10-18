@@ -26,6 +26,12 @@ const testPosts = [
   },
 ]
 
+function processPosts(testPosts){
+  return testPosts.forEach(element => {
+    element.postid + 1000;
+  });
+}
+
 const processedPosts = processPosts(testPosts)
 console.log(processedPosts)
 /*
