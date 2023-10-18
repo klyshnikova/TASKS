@@ -15,18 +15,22 @@
  */
 
 class ExtendedArray extends Array {
-    // sum(){
-    //     this.
-    // }
+
+    sum(){
+       return this.reduce((element,res)=>
+            element + res
+        )
+    }
     onlyNumbers(){
-        return this.forEach((element)=>{
-            const myArr=[]
-            if(typeof element == 'number'){
-                myArr.push(element)
-            }
-            return myArr
-        })
+        const res = this.filter(element =>typeof element === 'number')
+        return res.reduce((element,res)=>element+res)
     }
 }
 const newA = new ExtendedArray(1,2,3,4,6,'dd',7)
+console.log(newA.sum())
 console.log(newA.onlyNumbers())
+const sec = new ExtendedArray(1,34,6,56,4,'d',76,5)
+console.log(sec.sum())
+console.log(sec.onlyNumbers())
+console.log(sec.forEach(element=>console.log(element)))
+console.log(sec.map(element=>typeof element === 'number'))

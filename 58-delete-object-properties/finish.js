@@ -17,7 +17,14 @@ let person = {
   cartId: 435,
 }
 
-console.log({index,email,name,cartId}=person)
+// delete person._id
+// delete person.cart
+// delete person.processed
+{
+let _id,cart,processed;
+(   {_id,cart,processed,...person} =person)
+}
+console.log(person)
 /*
 {
   index: 4,

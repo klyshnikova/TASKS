@@ -26,10 +26,16 @@ const testPosts = [
   },
 ]
 
-function processPosts(testPosts){
-  return testPosts.forEach(element => {
-    element.postid + 1000;
-  });
+function processPosts(arr){
+  const newArr = JSON.parse(JSON.stringify(arr))
+   newArr.forEach(element => {
+    element.postId +=1000
+    element.postAuthor = element.author
+    delete element.author
+    element.postCommentsQty = element.commentsQty != undefined? element.commentsQty: 0
+    delete element.commentsQty
+  })
+  return newArr
 }
 
 const processedPosts = processPosts(testPosts)
