@@ -22,9 +22,9 @@
 
 
 
-// function weatherForecast(city, weather ='Отличная погода!'){
-//     return `Прогноз погоды для города ${city}:${weather}`
-// }
+function weatherForecast(city, weather ='Отличная погода!'){
+    return `Прогноз погоды для города ${city}:${weather}`
+}
 
 
 console.log(weatherForecast('Dubai', 'Солнечно'))
