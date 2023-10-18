@@ -6,27 +6,37 @@
  *  - функцию "greet" с одним параметром, которая должна возвращать
  *    строку-приветствие на основании "greetingString" и параметра,
  *    например, "Hey, this is Bob"
- *  - функцию "changeGreeting" с одним параметром, которая должна
+ *  - функцию "c" с одним параметром, которая должна
  *    изменять значение переменной "greetingString"
  *
  * 2. Функция "createGreeting" должа вернуть объект с двумя методами:
  *  - greet
- *  - changeGreeting
+ *  - 
  */
+
+function createGreeting (){
+    let greetingString = 'Hey, this is '
+    greet = (name)=>{return greetingString + name}
+    changeGreeting = function (par){return greetingString =par}
+    return({
+        greet,
+        changeGreeting
+    })
+}
 
 const greeting1 = createGreeting()
 
 console.log(greeting1.greet('Bob'))
 // Hey, this is Bob
 
-greeting1.changeGreeting('Good Morning from')
+greeting1.changeGreeting('Good Morning from ')
 
-console.log(greeting1.greet('Emily'))
+ console.log(greeting1.greet('Emily'))
 // Good Morning from Emily
 
 /* ____________  */
 
-const greeting2 = createGreeting()
+ const greeting2 = createGreeting()
 
-console.log(greeting2.greet('Emily'))
+ console.log(greeting2.greet('Emily'))
 // Hey, this is Emily

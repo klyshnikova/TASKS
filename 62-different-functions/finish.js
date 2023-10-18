@@ -10,7 +10,11 @@
 function firstFunction(a, b) {
   return a + b
 }
-
+//первый вариант создание самой функици
 const secondFunction = function (a, b) {
   return a + b
 }
+//присваивание переменной анонимное функциональное выражение. к нему можно обратиться только по названию переменной
+
+console.log(firstFunction(1,2))
+console.log(secondFunction(2,2))

@@ -8,6 +8,14 @@
  * 3. Также верните эту сумму как результат функции
  */
 
+function sumNumbers(...arr){
+    res = 0
+    for(i=0;i < arr.length;i++){
+        res =res + arr[i]
+    }    
+    console.log(res)
+    return res
+}
 sumNumbers(1, 3)
 // 4
 

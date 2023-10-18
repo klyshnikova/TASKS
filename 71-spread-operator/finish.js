@@ -9,7 +9,7 @@ const b = [4, 5]
 const c = [8, 9, 10]
 const d = 11
 
-// Напишите код здесь
+
 combinedArray=[0]
 combinedArray=[0,...a,...b,...c,d]
 console.log(combinedArray)

@@ -20,12 +20,16 @@ function sumObjectValues(obj){
 
 let len = Object.keys(obj).length
 let val = Object.values(obj)
+
   let result = 0
-    for(i = 0;i<=len;i++){
-      if(typeof val[i]!= 'number')
-      i++
-      else
+  i = 0
+    while(i<len){
+      if(typeof val[i] === 'number'){
         result=val[i] + result
+        i++
+      }
+      else
+        i++
     }
     return result
 }

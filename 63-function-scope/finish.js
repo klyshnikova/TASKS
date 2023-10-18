@@ -19,3 +19,4 @@ function myFn2(a) {
 }
 
 myFn1()
+//console.log() выведет undefind,2,5,15
